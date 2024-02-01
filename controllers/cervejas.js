@@ -15,7 +15,7 @@ const criarCerveja = async (req, res) => {
         const { nome, abv, tipo, nacionalidade } = req.body
 
         if(!nome || !abv || !tipo || !nacionalidade ){
-            res.status(400).send({ message: 'Dados incompletos' })
+            return res.status(400).send({ message: 'Dados incompletos' })
         }
 
         const novaCerveja = { nome, abv, tipo, nacionalidade }
@@ -33,7 +33,7 @@ const atualizarCerveja = async (req, res) => {
         const { nome, abv, tipo, nacionalidade } = req.body
 
         if (!nome || !abv || !tipo || !nacionalidade || !id) {
-            res.status(400).send({ message: 'Dados incompletos' })
+            return res.status(400).send({ message: 'Dados incompletos' })
         }
 
         const cervejaAtualizada = { nome, abv, tipo, nacionalidade }

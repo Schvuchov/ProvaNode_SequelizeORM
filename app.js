@@ -1,6 +1,6 @@
 // Importação de pacotes e arquivos
 import express from 'express'
-import cervejasRouter from './routes/cervejas.js'
+import { router } from './routes/cervejas.js'
 import { sequelize } from './database.js'
 import 'dotenv/config'
 
@@ -18,7 +18,7 @@ try{
 app.use(express.json())
 
 // Utilizando o arquivo de rotas importado na linha 3
-app.use(cervejasRouter)
+app.use(router)
 
 // Iniciando o servidor na porta 3000
 app.listen(3000, () => console.log('Servidor iniciado'))
