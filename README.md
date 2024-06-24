@@ -5,10 +5,10 @@ Uma cervejaria precisa de um sistema que disponibilize um cardápio online para 
 
 Desenvolva os endpoints para atender as seguintes necessidades da cervejaria:
 
-A. POST /cervejas para adicionar uma nova cerveja
-B. GET /cervejas para listar os nomes das cervejas
-C. PUT /cervejas/:id para editar determinada cerveja
-D. DELETE /cervejas/:id para excluir uma cerveja do banco de dados
-E. GET /cervejas/:id para visualizar detalhes de uma cerveja pelo id
+  - A. POST /cervejas para adicionar uma nova cerveja
+  - B. GET /cervejas para listar os nomes das cervejas
+  - C. PUT /cervejas/:id para editar determinada cerveja
+  - D. DELETE /cervejas/:id para excluir uma cerveja do banco de dados
+  - E. GET /cervejas/:id para visualizar detalhes de uma cerveja pelo id
 
 Observação: Utilizar estrutura de pastas contendo models, routes e controllers.
